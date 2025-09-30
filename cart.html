@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Bean Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span><a href="index.html">Bean Boutique</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your selections</p>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-empty" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Your cart is empty</h3>
+                <p>Add some delicious coffee or equipment to get started!</p>
+                <div class="cart-empty-links">
+                    <a href="coffee.html" class="btn">Browse Coffee</a>
+                    <a href="equipment.html" class="btn btn-secondary">Browse Equipment</a>
+                </div>
+            </div>
+            <div class="cart-container">
+                <div class="cart-items" id="cartItems">
+                </div>
+                <div class="cart-summary" id="cartSummary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">$5.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (10%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    <button class="btn btn-checkout">Proceed to Checkout</button>
+                    <p class="checkout-note"><i class="fas fa-lock"></i> Secure checkout - Coming soon!</p>
+                    <a href="coffee.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Free Shipping</h4>
+                    <p>On orders over $50</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-undo"></i>
+                    <h4>Easy Returns</h4>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Secure Payment</h4>
+                    <p>SSL encrypted checkout</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Bean Boutique</h4>
+                    <p>Your destination for premium coffee and brewing excellence since 2020.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="coffee.html">Coffee Selection</a></li>
+                        <li><a href="equipment.html">Brewing Equipment</a></li>
+                        <li><a href="events.html">Events & Workshops</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>50/504 Pyay & Hledan Rd</li>
+                        <li><i class="fas fa-phone"></i>+95 (09) 691-273-582</li>
+                        <li><i class="fas fa-envelope"></i>hello@beanboutique.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7am - 7pm</li>
+                        <li>Saturday: 8am - 8pm</li>
+                        <li>Sunday: 9am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

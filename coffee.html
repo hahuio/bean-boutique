@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection - Bean Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span><a href="index.html">Bean Boutique</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html" class="active">Coffee</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Coffee Selection</h1>
+            <p>Explore our unique blends and single-origin coffees</p>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for your perfect coffee...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="coffee-catalogue">
+        <div class="container">
+            <div class="catalogue-grid">
+                <div class="product-card" data-name="ethiopian yirgacheffe">
+                    <div class="product-image">
+                        <img src="./img/coffee1.jpg"
+                            alt="Ethiopian Yirgacheffe">
+                        <div class="product-badge">Single Origin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ethiopian Yirgacheffe</h3>
+                        <p class="coffee-price">79,000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Floral, citrus, blueberry
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> Pour-over, French Press
+                        </div>
+                        <p class="description">A light-bodied coffee with bright acidity and complex fruity notes.
+                            Perfect for those who enjoy a delicate, tea-like coffee experience.</p>
+                        <button class="btn add-to-cart" data-product="Ethiopian Yirgacheffe" data-price="79000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="colombian supremo">
+                    <div class="product-image">
+                        <img src="./img/coffee2.jpg"
+                            alt="Colombian Supremo">
+                        <div class="product-badge">Single Origin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Colombian Supremo</h3>
+                        <p class="coffee-price">71000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Caramel, nuts, chocolate
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> Drip, Espresso
+                        </div>
+                        <p class="description">Medium-bodied with a smooth, well-balanced flavor. Notes of caramel and
+                            nuts make this a crowd-pleasing everyday coffee.</p>
+                        <button class="btn add-to-cart" data-product="Colombian Supremo" data-price="71000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="sumatra mandheling">
+                    <div class="product-image">
+                        <img src="./img/coffee3.jpg"
+                            alt="Sumatra Mandheling">
+                        <div class="product-badge">Single Origin</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sumatra Mandheling</h3>
+                        <p class="coffee-price">83,000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Earthy, herbal, dark chocolate
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> French Press, Cold Brew
+                        </div>
+                        <p class="description">Full-bodied with low acidity and a rich, earthy flavor profile. Ideal for
+                            those who prefer a bold, intense coffee experience.</p>
+                        <button class="btn add-to-cart" data-product="Sumatra Mandheling" data-price="83000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="house blend signature">
+                    <div class="product-image">
+                        <img src="./img/coffee4.jpg"
+                            alt="House Blend Signature">
+                        <div class="product-badge">Blend</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>House Blend Signature</h3>
+                        <p class="coffee-price">67,000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Balanced, sweet, cocoa
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> Drip, Espresso, French Press
+                        </div>
+                        <p class="description">Our signature blend combining beans from Central and South America.
+                            Perfectly balanced for any brewing method.</p>
+                        <button class="btn add-to-cart" data-product="House Blend Signature" data-price="67000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="espresso roast">
+                    <div class="product-image">
+                        <img src="./img/coffee5.jpg"
+                            alt="Espresso Roast">
+                        <div class="product-badge">Blend</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Espresso Roast</h3>
+                        <p class="coffee-price">75,000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Bold, smoky, caramel
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> Espresso, Moka Pot
+                        </div>
+                        <p class="description">A dark roast blend specifically crafted for espresso. Creates a rich
+                            crema with bold, intense flavor.</p>
+                        <button class="btn add-to-cart" data-product="Espresso Roast" data-price="75000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-name="decaf swiss water">
+                    <div class="product-image">
+                        <img src="./img/coffee6.jpg"
+                            alt="Decaf Swiss Water">
+                        <div class="product-badge">Decaf</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Decaf Swiss Water</h3>
+                        <p class="coffee-price">71,000 MMK / 250g</p>
+                        <div class="tasting-notes">
+                            <strong>Tasting Notes:</strong> Smooth, mild, nutty
+                        </div>
+                        <div class="brewing-method">
+                            <strong>Recommended Brewing:</strong> Drip, Pour-over
+                        </div>
+                        <p class="description">Decaffeinated using the Swiss Water Process, retaining full flavor
+                            without chemicals. Enjoy great coffee any time of day.</p>
+                        <button class="btn add-to-cart" data-product="Decaf Swiss Water" data-price="71000">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Bean Boutique</h4>
+                    <p>Your destination for premium coffee and brewing excellence since 2020.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="coffee.html">Coffee Selection</a></li>
+                        <li><a href="equipment.html">Brewing Equipment</a></li>
+                        <li><a href="events.html">Events & Workshops</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>50/504 Pyay & Hledan Rd</li>
+                        <li><i class="fas fa-phone"></i>+95 (09) 691-273-582</li>
+                        <li><i class="fas fa-envelope"></i>hello@beanboutique.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7am - 7pm</li>
+                        <li>Saturday: 8am - 8pm</li>
+                        <li>Sunday: 9am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
