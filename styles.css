@@ -459,7 +459,7 @@ h1, h2, h3, h4 {
     position: relative;
     border: 1px solid var(--black);
     width: 80%;
-    margin: 30% auto;
+    margin: 20vh auto;
 }
 
 @keyframes slideDown {
@@ -1406,8 +1406,9 @@ h1, h2, h3, h4 {
     }
 
     .modal .modal-content {
-        width: 90%;
-        margin: 50% auto;
+        width: 85%;
+        padding: 20px;
+        margin: 20vh auto;
     }
 
     .slide-text h1 {
