@@ -25,7 +25,10 @@ body {
     background-color: var(--light-color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -62,6 +65,7 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
     font-family: 'Playfair Display', serif;
 }
+
 .logo a {
     text-decoration: none;
     color: var(--primary-color);
@@ -546,7 +550,7 @@ h1, h2, h3, h4 {
 }
 
 .search-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
     background-color: var(--white);
     border-bottom: 1px solid var(--black);
 }
@@ -1427,12 +1431,41 @@ h1, h2, h3, h4 {
         font-size: 2rem;
     }
 
+    .features {
+        padding: 2rem 0;
+    }
+
+    .feature-grid {
+        margin-top: 0;
+    }
+
+    .location {
+        padding: 2rem 0;
+    }
+
+    .equipment-section {
+        padding: 2rem 0;
+    }
+
     .equipment-card {
         grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .equipment-info {
+        padding: 1.5rem;
+    }
+
+    .equipment-info .price {
+        font-size: 2rem;
     }
 
     .cart-container {
         grid-template-columns: 1fr;
+    }
+
+    .coffee-catalogue {
+        padding: 2rem 0;
     }
 
     .cart-item {
