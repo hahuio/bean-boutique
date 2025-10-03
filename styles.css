@@ -134,6 +134,48 @@ h4 {
     overflow: hidden;
 }
 
+.logo-section {
+    padding: 1rem 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 0.6px solid var(--black);
+}
+
+.logo-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: #ffffff; 
+    padding: 0.7rem; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    width: 96%; 
+}
+
+.logo-ani{
+    display: flex;
+    padding: 0 1rem;
+    gap: 2.5rem;
+    animation: slideLogos 10s linear infinite;
+}
+
+.logo-container img {
+    max-height: 30px;
+    margin: 5px;
+}
+
+@keyframes slideLogos {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 .slideshow-container {
     position: relative;
     height: 600px;
