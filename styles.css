@@ -1352,7 +1352,7 @@ h4 {
 
 .benefit-item {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .benefit-item i {
@@ -1414,8 +1414,9 @@ h4 {
         background-color: var(--white);
         backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 2rem 0;
         box-shadow: var(--shadow);
+        gap: 2rem;
     }
 
     .nav-menu.active {
@@ -1506,8 +1507,60 @@ h4 {
         grid-column: 2;
     }
 
+    .promotions-section {
+        padding: 1rem 0;
+    }
+
+    .promotions-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+    }
+
+    .promo-card {
+        padding: 1.5rem;
+    }
+
+    .subscription-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }
+
+    .subscription-card {
+        background-color: var(--light-color);
+        border-radius: 15px;
+        border: 1px solid var(--black);
+        padding: 1.5rem;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .subscription-card .plan-header {
+        margin-bottom: 1rem;
+    }
+
+    .subscription-card .plan-price {
+        margin-bottom: 1rem;
+    }
+
+    .subscription-card .price {
+        font-size: 2rem;
+    }
+
     .subscription-card.featured {
         transform: scale(1);
+        padding: 1.5rem;
+    }
+
+    .subscription-benefits h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--primary-color);
     }
 }
 
