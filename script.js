@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSearch();
     initCart();
     initEventForm();
+    updateCartBadge();
 });
 
 function initSlideshow() {
@@ -142,6 +143,7 @@ function addToCart(name, price) {
     }
     
     saveCart(cart);
+    updateCartBadge();
 }
 
 function getCart() {
@@ -151,6 +153,22 @@ function getCart() {
 
 function saveCart(cart) {
     localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function updateCartBadge() {
+    const cart = getCart();
+    const badges = document.querySelectorAll('.cart-badge');
+    if (badges.length === 0) return;
+
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    badges.forEach(badge => {
+        if (totalItems > 0) {
+            badge.textContent = totalItems;
+        } else {
+            badge.textContent = '';
+        }
+    });
 }
 
 function displayCart() {
@@ -212,6 +230,7 @@ function updateQuantity(index, change) {
     
     saveCart(cart);
     displayCart();
+    updateCartBadge();
 }
 
 function removeFromCart(index) {
@@ -219,6 +238,7 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     saveCart(cart);
     displayCart();
+    updateCartBadge();
 }
 
 function updateCartSummary() {
