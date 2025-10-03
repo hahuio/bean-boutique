@@ -8,7 +8,7 @@
     --primary-color: #6F4E37;
     --secondary-color: #D4A574;
     --accent-color: #C17F59;
-    --dark-color: #2C1810;
+    --dark-color: #2f2725;
     --light-color: #F5F1ED;
     --light-colorbg: #fff1e3;
     --white: #FFFFFF;
@@ -1366,42 +1366,14 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
-.faq-section {
-    padding: 4rem 0;
-    background-color: var(--white);
-}
-
-.faq-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
-}
-
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.faq-item {
-    padding: 1.5rem;
-    background-color: var(--light-color);
-    border-radius: 10px;
-    border-left: 4px solid var(--primary-color);
-}
-
-.faq-item h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
 .post-footer {
     display: flex;
     gap: 1.5rem;
     color: #666;
     font-size: 0.9rem;
 }
+
+
 
 @media (max-width: 768px) {
     .nav-menu {
