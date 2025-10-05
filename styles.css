@@ -84,7 +84,7 @@ h4 {
 .nav-menu a {
     text-decoration: none;
     color: var(--dark-color);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
@@ -94,6 +94,7 @@ h4 {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--primary-color);
+    font-weight: 700;
     background-color: var(--light-colorbg);
     transform: translateY(-2px);
 }
@@ -403,6 +404,9 @@ h4 {
 }
 
 .location {
+    background-color: var(--white); 
+    border-radius: 15px;
+    box-shadow: var(--shadow);
     padding: 4rem 0;
 }
 
@@ -1415,6 +1419,72 @@ h4 {
     font-size: 0.9rem;
 }
 
+.customer-reviews {
+    padding: 2rem 0;
+    border: 1px solid var(--black);
+    background-color: var(--light-color);
+}
+
+.customer-reviews h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.review-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+}
+
+.review-slide {
+    flex: none;
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 1rem;
+}
+
+.review {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.reviewer {
+    font-style: italic;
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.review-slider-wrapper {
+    position: relative;
+}
+
+.review-indicators {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.review-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-indicator.active {
+    background-color: var(--primary-color);
+}
+
 
 
 @media (max-width: 768px) {
@@ -1427,10 +1497,15 @@ h4 {
         width: 100%;
         background-color: var(--white);
         backdrop-filter: blur(20px);
+        background-color: var(--dark-color);
         flex-direction: column;
         padding: 2rem 0;
         box-shadow: var(--shadow);
         gap: 2rem;
+    }
+
+    .nav-menu a {
+        color: var(--light-color);
     }
 
     .nav-menu.active {
@@ -1577,6 +1652,7 @@ h4 {
         color: var(--primary-color);
     }
 }
+
 
 @media (max-width: 480px) {
 

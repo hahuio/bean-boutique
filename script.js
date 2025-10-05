@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCart();
     initEventForm();
     updateCartBadge();
+    initReviewSlider();
 });
 
 function initSlideshow() {
@@ -295,5 +296,44 @@ function initEventForm() {
         setTimeout(() => {
             formMessage.style.display = 'none';
         }, 5000);
+    });
+}
+
+function initReviewSlider() {
+    const slider = document.querySelector('.review-slider');
+    const indicatorsContainer = document.querySelector('.review-indicators');
+    if (!slider || !indicatorsContainer) return;
+
+    const slides = slider.querySelectorAll('.review-slide');
+    
+    // Create indicators
+    slides.forEach((_, index) => {
+        const indicator = document.createElement('span');
+        indicator.classList.add('review-indicator');
+        indicator.dataset.index = index;
+        if (index === 0) {
+            indicator.classList.add('active');
+        }
+        indicatorsContainer.appendChild(indicator);
+        
+        indicator.addEventListener('click', () => {
+            slides[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+        });
+    });
+
+    const indicators = indicatorsContainer.querySelectorAll('.review-indicator');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const slideIndex = Array.from(slides).indexOf(entry.target);
+                indicators.forEach(ind => ind.classList.remove('active'));
+                indicators[slideIndex].classList.add('active');
+            }
+        });
+    }, { threshold: 0.6, root: slider });
+
+    slides.forEach(slide => {
+        observer.observe(slide);
     });
 }
